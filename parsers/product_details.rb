@@ -1,6 +1,8 @@
 data = JSON.parse(content)
 
 product = data['content']
+puts(content)
+abort('')
 name= product['name']
 
 brand = (product['name'].downcase.include?'red bull')? 'Red Bull':nil
