@@ -12,7 +12,7 @@ end
 desciption = product['shortDescription'].gsub(/<[^<>]+>/,' ').gsub(/[,\s\n]/,' ').strip rescue ""
 
 availability = product['stock'] == true ? '1' : ''
-if pack.nil?
+if pack.nil? or pack==0
   pack = product['totalQuantity'].to_i == 0 ? '1' : product['totalQuantity'].to_i
 end
 promotion_text  =product['productPromotion']['promotionPercentOff'].to_s+"% OFF" rescue ""
