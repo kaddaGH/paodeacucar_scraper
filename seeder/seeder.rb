@@ -2,7 +2,7 @@ require 'cgi'
 pages << {
     page_type: 'products_search',
     method: 'GET',
-    url: "https://api.gpa.digital/ex/products/list/secoes/C76/energeticos-e-isotonicos?storeId=241&qt=12&s=&ftr=facetSubShelf_ss%3A76_Energ%C3%A9ticos%20e%20isot%C3%B4nicos&p=0&rm=&gt=list&isClienteMais=false",
+    url:"https://api.gpa.digital/pa/products/list/secoes/C4215/energeticos?storeId=501&qt=12&s=&ftr=facetSubShelf_ss%3A4215_Energ%C3%A9ticos&p=0&rm=&gt=list&isClienteMais=false",
     vars: {
         'input_type' => 'taxonomy',
         'search_term' => '-',
@@ -13,7 +13,7 @@ pages << {
 }
 search_terms = ['Red Bull', 'RedBull', 'Energético', 'Energéticos']
 search_terms.each do |search_term|
-  break
+
   pages << {
       page_type: 'products_search',
       method: 'GET',

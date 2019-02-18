@@ -50,7 +50,7 @@ end
 
 unless  products.nil?
 
-  products.take(1).each_with_index do |product, i|
+  products.each_with_index do |product, i|
 
     if product.key?('id')
 
