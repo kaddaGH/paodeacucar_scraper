@@ -6,7 +6,7 @@ name= product['name']
 
 brand = (product['name'].downcase.include?'red bull')? 'Red Bull':nil
 if brand.nil?
-  brand =product['name'][/\s[A-Z\s]{4,}\s/]
+  brand =product['name'][/\s[A-Z\s]{3,}\s/]
 end
 
 availability = product['stock'] == true ? '1' : ''
