@@ -1,5 +1,5 @@
+require 'securerandom'
 data = JSON.parse(content)
-
 
 if data.key?('content')
   data = data['content']
@@ -62,7 +62,7 @@ unless  products.nil?
     pages << {
         page_type: 'product_details',
         method: 'GET',
-        url: "https://api.gpa.digital/pa/v3/products/ecom/#{product_id}?storeId=501&isClienteMais=false&searchkeyword=#{page['vars']['search_term']}&searchpage=#{current_page}",
+        url: "https://api.gpa.digital/pa/v3/products/ecom/#{product_id}?storeId=501&isClienteMais=false&uid=#{SecureRandom.uuid}",
         vars: {
             'input_type' => page['vars']['input_type'],
             'search_term' => page['vars']['search_term'],

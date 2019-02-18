@@ -1,3 +1,4 @@
+require 'securerandom'
 data = JSON.parse(content)
 
 product = data['content']
@@ -69,7 +70,7 @@ product_details = {
 pages << {
     page_type: 'product_reviews',
     method: 'GET',
-    url: "https://api.gpa.digital/pa/products/#{product['id']}/review?&searchkeyword=#{page['vars']['search_term']}&searchpage=#{page['vars']['page']}",
+    url: "https://api.gpa.digital/pa/products/#{product['id']}/review?&uid=#{SecureRandom.uuid}",
     vars: {
         'product_details' => product_details
     }
