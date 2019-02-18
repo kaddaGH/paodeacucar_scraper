@@ -51,7 +51,7 @@ end
 unless  products.nil?
 
   products.each_with_index do |product, i|
-break 
+
     if product.key?('id')
 
       product_id = product['id']
