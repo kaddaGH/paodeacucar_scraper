@@ -40,7 +40,7 @@ uom = $2
 
 product_details = {
     # - - - - - - - - - - -
-    RETAILER_ID: '100',
+    RETAILER_ID: '116',
     RETAILER_NAME: 'paodeacucar',
     GEOGRAPHY_NAME: 'BR',
     # - - - - - - - - - - -
